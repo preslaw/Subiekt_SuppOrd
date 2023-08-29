@@ -85,7 +85,7 @@ LEFT JOIN --- tu dodaję LastBuy
       TOW.tw_Symbol as 'Item', 
       POZ.ob_CenaWaluta as 'Price',
       POZ.ob_Ilosc as 'QTY',
-      DOK.dok_TerminRealizacji as 'Date',
+      DOK.dok_DataWyst as 'Date',
       DOK.dok_waluta as 'CUR',
       POZ.ob_Opis as 'OrderID',
       ROW_NUMBER() OVER(PARTITION BY tw_symbol ORDER BY tw_Symbol,dok_TerminRealizacji DESC)  as RowNum
